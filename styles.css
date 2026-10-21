@@ -1,0 +1,36 @@
+/* ESTILOS AREANET.COM */
+
+body {
+  font-family: 'Fredoka', 'Quicksand', sans-serif;
+}
+
+/* FONDO CUADERNO CON NÚMEROS Y SÍMBOLOS MATEMÁTICOS */
+.bg-notebook {
+  background-color: #fcfaf2;
+  background-image: 
+    linear-gradient(#dce6f1 1.5px, transparent 1.5px),
+    linear-gradient(90deg, #dce6f1 1.5px, transparent 1.5px),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" opacity="0.18"><g font-family="sans-serif" font-weight="bold"><text x="20" y="35" font-size="20" fill="%23d97706">1 2 3</text><text x="110" y="35" font-size="22" fill="%232563eb">+ %C3%97 %C3%B7</text><text x="210" y="40" font-size="20" fill="%23dc2626">4 5 6</text><text x="30" y="100" font-size="22" fill="%239333ea">%CF%80 %E2%88%9A %E2%88%9E</text><text x="140" y="105" font-size="20" fill="%23059669">7 8 9 0</text><text x="240" y="110" font-size="22" fill="%23ea580c">=</text><text x="25" y="170" font-size="18" fill="%230284c7">A = (b%C2%B7h)/2</text><text x="180" y="175" font-size="20" fill="%23be123c">%25 %2B %2D</text><text x="30" y="240" font-size="20" fill="%2315803d">3.1416</text><text x="130" y="245" font-size="22" fill="%23b45309">10 20 30</text><text x="230" y="250" font-size="22" fill="%236b21a8">x y z</text></g><g stroke="%23334155" stroke-width="1.8" fill="none" stroke-linecap="round"><path d="M25 180 L65 150 L105 180 Z" stroke="%23d97706"/><circle cx="250" cy="180" r="16" stroke="%230284c7"/><polygon points="120,260 145,285 95,285" stroke="%23059669"/></g></svg>');
+  background-size: 24px 24px, 24px 24px, 300px 300px;
+  background-position: -1px -1px, -1px -1px, 0 0;
+}
+
+/* FONDO NUMÉRICO PARA COMODÍN 3 */
+.bg-numbers-pattern {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" opacity="0.25"><text x="10" y="30" fill="%235eead4" font-size="20" font-weight="bold" font-family="sans-serif">1 2 3</text><text x="80" y="70" fill="%23fde047" font-size="22" font-weight="bold" font-family="sans-serif">+ %C3%97 %C3%B7</text><text x="20" y="120" fill="%235eead4" font-size="24" font-weight="bold" font-family="sans-serif">4 5 6</text><text x="100" y="140" fill="%23fde047" font-size="18" font-weight="bold" font-family="sans-serif">7 8 9</text></svg>');
+  background-size: 160px 160px;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+input[type=range] {
+  height: 8px;
+  border-radius: 5px;
+}
